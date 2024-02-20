@@ -1,13 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Dominick's Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Dominick Dickerson<span class="cursor">|</span></h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello, there. My name is Dominick Dickerson. I am a student at Missouri S&T.
+            This website is here to showcase my skills as a software engineer! It is made 
+            using vanilla JavaScript, HTML, and CSS. You can check out the code for this on my
+            <a href="https://www.github.com/Dominickator" target="_blank">Github</a>.
+        </p>
+        <p>Keep scrolling for more.</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <p>During my internships, I have become very familiar with the C# programming language as a result
+            of us using Blazor to program our internal web applications in. Below I have a list of languages, 
+            frameworks, and technologies I am familiar with.
+        </p>
+        <section class="skills-section">
+            <div class="container">
+                <h3>Languages</h3>
+                <ul class="skills-list">
+                    <li><i class="skills-icon devicon-python-plain colored"></i><p>Python</p></li>
+                    <li><i class="skills-icon devicon-csharp-plain colored"></i><p>C#</p></li>
+                    <li><i class="skills-icon devicon-javascript-plain colored"></i><p>JavaScript</p></li>
+                    <li><i class="skills-icon devicon-cplusplus-plain colored"></i><p>C++</p></li>
+                    <li><i class="skills-icon devicon-azuresqldatabase-plain colored"></i><p>SQL Server</p></li>
+                    <li><i class="skills-icon devicon-powershell-plain colored"></i><p>PowerShell</p></li>
+                    <li><i class="skills-icon devicon-bash-plain colored"></i><p>Bash</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills-section">
+            <div class="container">
+                <h3>Frameworks</h3>
+                <ul class="skills-list">
+                    <li><i class="skills-icon devicon-react-plain colored"></i><p>React -- JavaScript</p></li>
+                    <li><i class="skills-icon devicon-svelte-plain colored"></i><p>Svelte -- JavaScript</p></li>
+                    <li><i class="skills-icon devicon-blazor-plain colored"></i><p>Blazor -- .NET</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills-section">
+            <div class="container">
+                <h3>Technologies</h3>
+                <ul class="skills-list">
+                    <li><i class="skills-icon devicon-vscode-plain colored"></i><p>Visual Studio Code</p></li>
+                    <li><i class="skills-icon devicon-visualstudio-plain colored"></i><p>Visual Studio</p></li>
+                    <li><i class="skills-icon devicon-git-plain colored"></i><p>Git</p></li>
+                    <li><i class="skills-icon devicon-azuredevops-plain colored"></i><p>Azure DevOps</p></li>
+                    <li><i class="skills-icon devicon-linux-plain colored"></i><p>Linux</p></li>
+                    <li><i class="skills-icon devicon-xcode-plain colored"></i><p>XCode</p></li>
+                </ul>
+            </div>
+        </section>
+        <p>Of course, these are only the technology skills that I have acquired. Throughout my internships, I have acquired 
+            many other valuable skills. Some of them being: working well in a team of experienced software developers, 
+            1-on-1 meetings with users to better understand their needs, receiving and fixing bug reports from users,
+            and group problem solving.
+        </p>
+    </section>
+
+    <section class="scroll-animate">
+        <h2>Projects</h2>
+        <p>Below I will highlight 3 of my favorite passion projects that I have worked on:</p>
+        <div class="project">
+            <h3>Weather Web App</h3>
+            <p><a href="https://dominickator.github.io/weather-svelte" target="_blank">Project Link</a></p>
+            <p>This website, hosted at my Github pages and uses the Svelte JavaScript framework to access two APIs, the NWS Weather API, and the MapQuest API to convert 
+            location strings to coordinates. This was a fantastic learning experience, along the way I learned a lot about
+            APIs and the many tools that are used. Some of my favorite that I've used are Postman and Insomnia REST.
+            Overall, it was a great learning experience for me.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Fire Emblem Database</h3>
+            <p><a href="https://github.com/Dominickator/FEDatabase" target="_blank">Project Link</a></p>
+            <p>This project was the final project for my CS 2300 Introduction to Database and Filesystems class.
+                It is written in JavaScript using the React framework. This is probably the most involved project I've ever done
+                because it involves all stages of programming. Using MySQL it includes a file to build a database from scratch. 
+                The website itself uses react routing with Axios, along with featuring fully functioning CRUD operations. Overall,
+                I learned the most about web development from this project, moreso then any other I've ever done.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Kanye Discord Bot</h3>
+            <p><a href="https://github.com/Dominickator/Kanye-Discord-Bot" target="_blank">Project Link</a></p>
+            <p>This is definitely the most "unprofessional" project I've ever done. You see, I wanted to 
+                learn Rust, and I still am learning it as well. I decided to make a bot that connected to 
+                the online chat platform, Discord. Using tokio with Rust, I call an API that returns a random quote
+                from the rapper, Kanye West, when the bot is in your server and you type "!kanye". This was a great Introduction
+                to Rust, and truly made me realize how incredible it is, and how much better it is then C++.
+            </p>
+        </div>
+    </section>
+
+    <section class="scroll-animate">
+        <h2>Contact</h2>
+        <p>Email: {My first name}ator122102@gmail.com</p>
+        <p>LinkedIn: www.linkedin.com/in/dominick-dickerson-93b111280</p>
+    </section>
+
+    <script src="./JS/index.js"></script>
+</body>
 </html>
