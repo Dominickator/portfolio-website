@@ -8,4 +8,4 @@ Just HTML, CSS and JavaScript. Nothing else.
 
 ## What's the Link?
 
-(The Link)[https://dominickator.github.io/portfolio-website/]
+[The Link](https://dominickator.github.io/portfolio-website/)
