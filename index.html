@@ -1,117 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dominick's Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1>Dominick Dickerson<span class="cursor">|</span></h1>
-    </header>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello, there. My name is Dominick Dickerson. I am a student at Missouri S&T.
-            This website is here to showcase my skills as a software engineer! It is made 
-            using vanilla JavaScript, HTML, and CSS. You can check out the code for this on my
-            <a href="https://www.github.com/Dominickator" target="_blank">Github</a>.
-        </p>
-        <p>Keep scrolling for more.</p>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dominick's Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume/resume-FALL24.pdf" target="_blank">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.github.com/Dominickator/portfolio-website" target="_blank">View The Code</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero bg-dark text-white text-center d-flex align-items-center justify-content-center"
+    >
+      <div class="content">
+        <h1>Hello, my name is Dominick Dickerson</h1>
+        <p class="lead">Welcome to my portfolio.</p>
+        <button class="btn btn-outline-light mt-3" id="learnMoreBtn">
+          Learn More
+        </button>
+      </div>
     </section>
 
-    <section>
-        <h2>Skills</h2>
-        <p>During my internships, I have become very familiar with the C# programming language as a result
-            of us using Blazor to program our internal web applications in. Below I have a list of languages, 
-            frameworks, and technologies I am familiar with.
-        </p>
-        <section class="skills-section">
-            <div class="container">
-                <h3>Languages</h3>
-                <ul class="skills-list">
-                    <li><i class="skills-icon devicon-python-plain colored"></i><p>Python</p></li>
-                    <li><i class="skills-icon devicon-csharp-plain colored"></i><p>C#</p></li>
-                    <li><i class="skills-icon devicon-javascript-plain colored"></i><p>JavaScript</p></li>
-                    <li><i class="skills-icon devicon-cplusplus-plain colored"></i><p>C++</p></li>
-                    <li><i class="skills-icon devicon-azuresqldatabase-plain colored"></i><p>SQL Server</p></li>
-                    <li><i class="skills-icon devicon-powershell-plain colored"></i><p>PowerShell</p></li>
-                    <li><i class="skills-icon devicon-bash-plain colored"></i><p>Bash</p></li>
-                </ul>
+    <!-- About Section -->
+    <section id="about" class="about-section text-center my-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-12 text-lg-start text-md-center mb-4 mb-lg-0"
+          >
+            <img
+              src="images/profile-image.jpg"
+              alt="Profile Image"
+              class="img-fluid rounded-circle profile-image"
+            />
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h2 class="mb-3">About Me</h2>
+            <p class="lead mb-4">
+              I'm a Senior at Missouri University of Science and Technology
+              majoring in Computer Science based in Kansas City, Missouri, with an expected graduation in May
+              2025. Through a combination of academic coursework and internships
+              as a Software Developer, I've developed a robust skill set in both
+              Microsoft services (SQL Server, SSRS, C#, Blazor) and key
+              programming languages.
+            </p>
+            <p>
+              My experience spans JavaScript (React, Svelte), C++, Python, and
+              MySQL, with advanced knowledge of database design, algorithms, and
+              mathematical foundations like Calculus and Linear Algebra.
+              Additionally, I'm proficient in MacOS, Windows, and various Linux
+              distributions.
+            </p>
+            <p>
+              I'm always eager to apply my skills in challenging environments
+              and open to discussing new opportunities and collaborations in the
+              tech world.
+            </p>
+            <div class="tech-stack mt-4 text-center">
+              <h5 class="mb-3">Tech Stack</h5>
+              <div class="d-flex justify-content-center">
+                <div class="mx-2" title="HTML">
+                  <i class="devicon-html5-plain"></i>
+                </div>
+                <div class="mx-2" title="CSS">
+                  <i class="devicon-css3-plain"></i>
+                </div>
+                <div class="mx-2" title="JavaScript">
+                  <i class="devicon-javascript-plain"></i>
+                </div>
+                <div class="mx-2" title="ReactJS">
+                  <i class="devicon-react-original"></i>
+                </div>
+                <div class="mx-2" title="SvelteJS">
+                  <i class="devicon-svelte-plain"></i>
+                </div>
+                <div class="mx-2" title="Python">
+                  <i class="devicon-python-plain"></i>
+                </div>
+                <div class="mx-2" title="Git">
+                  <i class="devicon-git-plain"></i>
+                </div>
+                <div class="mx-2" title="C++">
+                  <i class="devicon-cplusplus-plain"></i>
+                </div>
+                <div class="mx-2" title="C#">
+                  <i class="devicon-csharp-plain"></i>
+                </div>
+                <div class="mx-2" title="Blazor">
+                  <i class="devicon-blazor-original"></i>
+                </div>
+                <div class="mx-2" title="SQL">
+                  <i class="devicon-azuresqldatabase-plain"></i>
+                </div>
             </div>
-        </section>
-        <section class="skills-section">
-            <div class="container">
-                <h3>Frameworks</h3>
-                <ul class="skills-list">
-                    <li><i class="skills-icon devicon-react-plain colored"></i><p>React -- JavaScript</p></li>
-                    <li><i class="skills-icon devicon-svelte-plain colored"></i><p>Svelte -- JavaScript</p></li>
-                    <li><i class="skills-icon devicon-blazor-plain colored"></i><p>Blazor -- .NET</p></li>
-                </ul>
-            </div>
-        </section>
-        <section class="skills-section">
-            <div class="container">
-                <h3>Technologies</h3>
-                <ul class="skills-list">
-                    <li><i class="skills-icon devicon-vscode-plain colored"></i><p>Visual Studio Code</p></li>
-                    <li><i class="skills-icon devicon-visualstudio-plain colored"></i><p>Visual Studio</p></li>
-                    <li><i class="skills-icon devicon-git-plain colored"></i><p>Git</p></li>
-                    <li><i class="skills-icon devicon-azuredevops-plain colored"></i><p>Azure DevOps</p></li>
-                    <li><i class="skills-icon devicon-linux-plain colored"></i><p>Linux</p></li>
-                    <li><i class="skills-icon devicon-xcode-plain colored"></i><p>XCode</p></li>
-                </ul>
-            </div>
-        </section>
-        <p>Of course, these are only the technology skills that I have acquired. Throughout my internships, I have acquired 
-            many other valuable skills. Some of them being: working well in a team of experienced software developers, 
-            1-on-1 meetings with users to better understand their needs, receiving and fixing bug reports from users,
-            and group problem solving.
-        </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section my-5">
+      <div class="container">
         <h2>Projects</h2>
-        <p>Below I will highlight 3 of my favorite passion projects that I have worked on:</p>
-        <div class="project">
-            <h3>Weather Web App</h3>
-            <p><a href="https://dominickator.github.io/weather-svelte" target="_blank">Project Link</a></p>
-            <p>This website, hosted at my Github pages and uses the Svelte JavaScript framework to access two APIs, the NWS Weather API, and the MapQuest API to convert 
-            location strings to coordinates. This was a fantastic learning experience, along the way I learned a lot about
-            APIs and the many tools that are used. Some of my favorite that I've used are Postman and Insomnia REST.
-            Overall, it was a great learning experience for me.
-            </p>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-md-4 project-card">
+            <div class="card">
+              <img
+                src="images/weather-project.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Weather App</h5>
+                <p class="card-text">This website, hosted on GitHub Pages, uses the Svelte framework to integrate the NWS Weather API and MapQuest API for location-based weather data. 
+                    This project enhanced my understanding of APIs and tools like Postman and Insomnia REST.</p>
+                <div class="tech-stack mt-4 text-center">
+                    <h6 class="mb-3">Tech Stack</h6>
+                    <div class="d-flex justify-content-center">
+                        <div class="mx-2" title="HTML">
+                            <i class="devicon-html5-plain"></i>
+                        </div>
+                        <div class="mx-2" title="CSS">
+                            <i class="devicon-css3-plain"></i>
+                        </div>
+                        <div class="mx-2" title="JavaScript">
+                            <i class="devicon-javascript-plain"></i>
+                        </div>
+                        <div class="mx-2" title="SvelteJS">
+                            <i class="devicon-svelte-plain"></i>
+                        </div>
+                        <div class="mx-2" title="GitHub">
+                            <i class="devicon-github-original"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Dominickator/weather-svelte" class="btn btn-outline-primary mt-4" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-4 project-card">
+            <div class="card">
+              <img
+                src="images/sql-project.png"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Full Stack MySQL Database</h5>
+                <p class="card-text">This project, completed for my CS 2300 Introduction to Database and Filesystems course, is a JavaScript application built with the React framework. 
+                    It features MySQL integration for database creation, React routing with Axios, and full CRUD functionality. 
+                    This was my most comprehensive project, encompassing all stages of development and significantly enhancing my web development skills.</p>
+                <div class="tech-stack mt-4 text-center">
+                    <h6 class="mb-3">Tech Stack</h6>
+                    <div class="d-flex justify-content-center">
+                        <div class="mx-2" title="HTML">
+                            <i class="devicon-html5-plain"></i>
+                        </div>
+                        <div class="mx-2" title="CSS">
+                            <i class="devicon-css3-plain"></i>
+                        </div>
+                        <div class="mx-2" title="JavaScript">
+                            <i class="devicon-javascript-plain"></i>
+                        </div>
+                        <div class="mx-2" title="ReactJS">
+                            <i class="devicon-react-plain"></i>
+                        </div>
+                        <div class="mx-2" title="MySQL">
+                            <i class="devicon-mysql-original"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Dominickator/FEDatabase" class="btn btn-outline-primary mt-4" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-4 project-card">
+            <div class="card">
+              <img
+                src="images/landing-project.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Internal Landing Page Redesign</h5>
+                <p class="card-text">During my internship, I rewrote the company's internal landing page for their internal web application. 
+                    This was by communicating effectively with users on features that they felt were most important for their day-to-day activities. 
+                    I was also responsible for the custom CSS design of the page and for communicating with internal and external APIs in order to pull data. 
+                    Overall, it taught me how to effectively communicate changes and features with users, the full cycle of software engineering, and beta testing with certain users in order to assure a high-level of quality.</p>
+                <div class="tech-stack mt-4 text-center">
+                    <h6 class="mb-3">Tech Stack</h6>
+                    <div class="d-flex justify-content-center">
+                        <div class="mx-2" title="HTML">
+                            <i class="devicon-html5-plain"></i>
+                        </div>
+                        <div class="mx-2" title="CSS">
+                            <i class="devicon-css3-plain"></i>
+                        </div>
+                        <div class="mx-2" title="C#">
+                            <i class="devicon-csharp-plain"></i>
+                        </div>
+                        <div class="mx-2" title="Blazor">
+                            <i class="devicon-blazor-plain"></i>
+                        </div>
+                        <div class="mx-2" title="SQL Server">
+                            <i class="devicon-azuresqldatabase-plain"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Dominickator" class="btn btn-outline-primary mt-4" target="_blank">Can't View -- Proprietary</a>
+              </div>
+          </div>
         </div>
-        <div class="project">
-            <h3>Fire Emblem Database</h3>
-            <p><a href="https://github.com/Dominickator/FEDatabase" target="_blank">Project Link</a></p>
-            <p>This project was the final project for my CS 2300 Introduction to Database and Filesystems class.
-                It is written in JavaScript using the React framework. This is probably the most involved project I've ever done
-                because it involves all stages of programming. Using MySQL it includes a file to build a database from scratch. 
-                The website itself uses react routing with Axios, along with featuring fully functioning CRUD operations. Overall,
-                I learned the most about web development from this project, moreso then any other I've ever done.
-            </p>
-        </div>
-        <div class="project">
-            <h3>Kanye Discord Bot</h3>
-            <p><a href="https://github.com/Dominickator/Kanye-Discord-Bot" target="_blank">Project Link</a></p>
-            <p>This is definitely the most "unprofessional" project I've ever done. You see, I wanted to 
-                learn Rust, and I still am learning it as well. I decided to make a bot that connected to 
-                the online chat platform, Discord. Using tokio with Rust, I call an API that returns a random quote
-                from the rapper, Kanye West, when the bot is in your server and you type "!kanye". This was a great Introduction
-                to Rust.
-            </p>
-        </div>
+      </div>
     </section>
 
-    <section class="scroll-animate">
-        <h2>Contact</h2>
-        <p><a href="mailto:dominickator122102@gmail.com" target="_blank">Email</a></p>
-        <p><a href="https://linkedin.com/in/dominick-dickerson-93b111280" target="_blank">LinkedIn</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section text-center my-5">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p class="lead">Let's build something together!</p>
+        <a href="mailto:dominickator122102@gmail.com" class="btn btn-outline-dark" target="_blank"
+          >Email Me</a
+        >
+        <a href="https://www.linkedin.com/in/dominick-dickerson-93b111280" class="btn btn-outline-dark" target="_blank"
+          >LinkedIn</a>
+        <a href="https://www.github.com/Dominickator" class="btn btn-outline-dark" target="_blank"
+          >GitHub</a>
+      </div>
     </section>
 
-    <script src="./JS/index.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>
+        Last Updated: September 2024 |
+        Made with ❤️ in Kansas City
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
 </html>
